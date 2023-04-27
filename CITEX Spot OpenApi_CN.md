@@ -195,7 +195,8 @@ URL : [https://openapi.xxx.com/sapi/v1/klines](#fenced-code-block)
 
 | 参数名      | 类型 | 示例 |
 | ----------- | ----------- | ----------- |
-| synbol    | String        | 币对名称 E.g.BTCUSDT     |
+| symbol   | String        | 币对名称 E.g.BTCUSDT     |
+| interval | String        | k线图区间, 可识别发送的值为：1min,5min,15min,30min,60min,1day,1week,1month（min=分钟，h=小时,day=天，week=星期，month=月）   |
 
 #####Responses
 * 🟩200: OK 成功获取ticker信息
@@ -239,7 +240,7 @@ URL : [https://openapi.xxx.com/sapi/v1/trades](#fenced-code-block)
 
 | 参数名      | 类型 | 示例 |
 | ----------- | ----------- | ----------- |
-| Limit      | integer       | 默认100；最大100       |
+| limit      | integer       | 默认100；最大100       |
 | synbol*    | Text        | Text        |
 
 #####Responses
